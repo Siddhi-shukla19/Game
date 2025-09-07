@@ -49,9 +49,9 @@ function checkAns(idx){
        }
     }else{
         h2.innerHTML = `Game over! your score was: <b> ${level}</b> <br> press any key to start.`;
-        document.querySelector("body").style.backgroundColor ="red";
+       document.querySelector("body").style.backgroundColor ="red";
         setTimeout(function(){
-            document.querySelector("body").style.backgroundColor ="white";
+          document.querySelector("body").style.backgroundColor ="white";
         },160)
         reset();
     }
@@ -73,7 +73,7 @@ for(btn of allBtns){
 }
 
 function reset(){
-    started ==false;
+    started = false;
     gameSeq = [];
     userSeq = [];
     level = 0;
